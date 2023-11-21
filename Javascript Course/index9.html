@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>
+     Todo List
+    </title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <p>Todo List</p>
+
+    <input placeholder="Todo name"
+    class="js-name-input">
+
+    <button onclick="
+     addTodo();">
+      Add
+    </button>
+    <script>
+     const todoList = [];
+
+     function addTodo() {
+       const inputElement = document.querySelector('.js-name-input');
+       const name = inputElement.value;
+       
+
+       todoList.push(name);
+       console.log(todoList);
+
+       inputElement.value = "";
+      }
+     
+
+
+      //   let i = 1;
+
+      //   while (i <= 5) { 
+      //     console.log(i);         /*NONE STANDARD*/
+      //     i++;
+      //   }
+
+      //   let randomNumber = 0;
+
+      //   while (randomNumber < 0.5) {
+      //     randomNumber = Math.random();
+      //   }
+      //   console.log(randomNumber);
+
+      //  for (let i = 5; i<= 5; i++) {
+      //   console.log(i);                       /* STANDARD LOOP*/
+      //  };
+    </script>
+  </body>
+</html>
+
+ 

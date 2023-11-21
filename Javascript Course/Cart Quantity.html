@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>
+      Cart Quantity
+    </title>
+    <style>
+    </style>
+  </head>
+  <body>
+
+    <p>
+      Cart Quantity
+    </p>
+    
+    <button onclick="
+    const maxiMum = 10;
+
+    if (cartQuantity >= maxiMum) {
+      alert('The cart is full');
+     } else if (cartQuantity <= 0) {
+      alert('Not enough items in the cart')
+     } else {
+      alert(`Cart Quantity: ${cartQuantity}`);
+     }
+    ">
+      Show Quantity
+    </button>
+
+    <button onclick="
+    cartQuantity ++;
+    alert(`Cart Quantity: ${cartQuantity}`);
+    ">
+      Add to Cart
+    </button>
+
+    <button onclick="
+    cartQuantity += 2;
+    alert(`Cart Quantity: ${cartQuantity}`)
+    ">
+     +2
+    </button>
+
+    <button onclick="
+    cartQuantity += 3;
+    alert(`Cart Quantity: ${cartQuantity}`)
+    ">
+      +3
+    </button>
+
+    <button onclick="
+    cartQuantity += 4;
+    alert(`Cart Quantity: ${cartQuantity}`)
+    ">
+      +4
+    </button>
+
+    <button onclick="
+    cartQuantity += 5;
+    alert(`Cart Quantity: ${cartQuantity}`)
+    ">
+      +5
+    </button>
+
+    <button onclick="
+    cartQuantity -= 2;
+    alert(`cart Quantity: ${cartQuantity}`);
+    ">
+     -2
+    </button>
+
+    <button onclick="
+    cartQuantity -= 3;
+    alert(`cart Quantity: ${cartQuantity}`);
+    ">
+     -3
+    </button>
+
+    <button onclick="
+    cartQuantity -= 1;
+    alert(`cart Quantity: ${cartQuantity}`);
+    ">
+      Remove from Cart
+    </button>
+
+    <button  onclick="   
+    cartQuantity = 0;
+    alert('Cart was reset.');
+    alert(`cart Quantity: ${cartQuantity}`);
+    ">
+     Reset Cart
+    </button>
+
+    <script>
+     let cartQuantity = 0;
+
+    //  let name = "Yomade";
+    //  console.log(`My name is ${name}`);
+
+    //  let coffee = 5;
+    //  let bagels = 3;
+    //  let soup = 9;
+
+    //  let totalcost = coffee + bagels + soup * 0.1;
+    //  console.log(`Total cost: $${totalcost}`)
+    //  console.log(`Tax(10%): $${0.1}`);
+    </script>
+  </body>
+</html>
+
