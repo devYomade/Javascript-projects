@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>
+      Coin-flip Game
+    </title>
+    <style>
+    </style>
+  </head>
+
+  <body>
+    
+   
+    <script>
+     const randomNumber = Math.random();
+    //  let result = ''; 
+    
+
+    //  if (randomNumber <= 0.5) {
+    //   result = 'Heads';
+    //   console.log(result)
+    //  } else {
+    //   result = 'Tails';
+    //   console.log(result)
+    //  }
+
+    //  let guess = 'Heads';
+
+    //  if (result === guess) {
+    //   console.log('You win!')
+    //  } else {
+    //   console.log('You lose!')
+    //  }
+         
+
+      /* Using Tenary Operators */
+      const result = randomNumber <= 0.5 ? 'Heads' : 'Tails';
+      console.log(result);
+
+      const guess = 'Heads';
+
+      const outcome = result === guess ? 'You win!' : 'You lose!';
+      console.log(outcome);
+
+
+
+    </script>
+  </body>
+</html>
